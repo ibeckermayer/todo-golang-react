@@ -1,2 +1,0 @@
-FROM nginx:alpine
-COPY ui/todo-ui/build/ /usr/share/nginx/html/
