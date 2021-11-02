@@ -19,6 +19,8 @@ Accessible via: http://localhost:5001/api/v1/todos/
 
 #### UI
 
+###### Development
+
 ```bash
 cd ui
 yarn install
@@ -26,3 +28,13 @@ yarn start
 ```
 
 Accessible via: http://localhost:8080
+
+###### Development
+
+```bash
+cd ui
+yarn install
+yarn build
+```
+
+Run the server and the build will be accessible via http://localhost:5000
