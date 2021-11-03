@@ -56,10 +56,6 @@ const TodoList = ({todos, remove, complete}) => {
 };
 
 
-// const App = () => {
-//   return (<div className="App">Hello World!</div>);
-// };
-
 window.id = 0;
 class App extends React.Component{
   constructor(props){
@@ -69,7 +65,7 @@ class App extends React.Component{
     this.state = {
       data: []
     }
-    this.apiUrl = 'http://localhost:5001/api/v1/todos/'
+    this.apiUrl = window.location.href + 'api/v1/todos/'
   }
   // Lifecycle method
   componentDidMount(){

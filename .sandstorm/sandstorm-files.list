@@ -12,7 +12,8 @@ opt/app/.sandstorm/launcher.sh
 opt/app/todo-app
 opt/app/ui/build/index.html
 opt/app/ui/build/static/css/main.01010ba5.css
-opt/app/ui/build/static/js/main.f05332da.js
+opt/app/ui/build/static/css/main.01010ba5.css.map
+opt/app/ui/build/static/js/main.c086ce39.js
 proc/cpuinfo
 sandstorm-http-bridge
 sandstorm-http-bridge-config

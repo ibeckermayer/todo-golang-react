@@ -19,9 +19,13 @@ echo 'export PATH=/usr/local/go/bin:$PATH' > /etc/profile.d/go.sh
 # Needed for fetching go libraries:
 apt-get install -y git
 
+# Needed for downloading C header files used by go libraries such as sqlite3.
 apt-get install -y build-essential
 
-# Install yarn for building static frontend assets
-apt-get install -y yarn
+# Install yarn for building static frontend assets.
+apt install -y curl
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+apt update && apt install -y yarn
 
 exit 0
